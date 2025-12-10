@@ -15,10 +15,10 @@ def load_example_data() -> pd.DataFrame:
     """
     try:
         df_train = pd.read_csv(
-            'df_train.csv'
+            './df_train.csv'
         )
         df_test = pd.read_csv(
-            "df_test.csv"
+            "./df_test.csv"
         )
         return df_train, df_test
     except Exception as e:
