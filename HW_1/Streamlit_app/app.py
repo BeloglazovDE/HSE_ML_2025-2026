@@ -27,7 +27,6 @@ from ui_components import (
     render_data_loading_sidebar,
     render_eda_tab,
     render_model_training_tab,
-    render_prediction_tab,
     show_regression_metrics,
     show_classification_metrics,
 )
