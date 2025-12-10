@@ -14,12 +14,9 @@ def load_example_data() -> pd.DataFrame:
         df_train, df_test (DataFrames) 
     """
     try:
-        df_train = pd.read_csv(
-            './df_train.csv'
-        )
-        df_test = pd.read_csv(
-            "./df_test.csv"
-        )
+        df_train = pd.read_csv("HW_1/Streamlit_app/df_train.csv")
+        df_test = pd.read_csv("HW_1/Streamlit_app/df_test.csv")
+
         return df_train, df_test
     except Exception as e:
         st.sidebar.error(f":x: Ошибка загрузки примера: {e}")
